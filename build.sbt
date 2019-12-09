@@ -12,7 +12,6 @@ enablePlugins(JavaAppPackaging)
 
 assemblyJarName in assembly := "spark-hello-world.jar"
 
-
 assemblyMergeStrategy in assembly := {
   case PathList("META-INF", xs @ _*) => MergeStrategy.discard
   case x => MergeStrategy.first
